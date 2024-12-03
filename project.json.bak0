@@ -1,0 +1,46 @@
+{
+    "project_name": "JHO3DETestProject",
+    "version": "1.0.0",
+    "project_id": "{3A25FF9F-1F95-496F-B070-5F14117CF614}",
+    "origin": "The primary repo for JHO3DETestProject goes here: i.e. http://www.mydomain.com",
+    "license": "What license JHO3DETestProject uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
+    "display_name": "JHO3DETestProject",
+    "summary": "A short description of JHO3DETestProject.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "JHO3DETestProject"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": [
+        "Gem"
+    ],
+    "restricted": "JHO3DETestProject",
+    "gem_names": [
+        "JHO3DETestProject",
+        "Atom",
+        "AudioSystem",
+        "CameraFramework",
+        "DebugDraw",
+        "DiffuseProbeGrid",
+        "EditorPythonBindings",
+        "EMotionFX",
+        "GameState",
+        "ImGui",
+        "LandscapeCanvas",
+        "LyShine",
+        "MiniAudio",
+        "PhysX",
+        "PrimitiveAssets",
+        "PrefabBuilder",
+        "SaveData",
+        "ScriptCanvasPhysics",
+        "ScriptEvents",
+        "StartingPointInput",
+        "TextureAtlas",
+        "WhiteBox",
+        "RemoteTools"
+    ]
+}
