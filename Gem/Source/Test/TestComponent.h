@@ -8,11 +8,10 @@
  */
 #pragma once
 
-#include <Atom/RPI.Public/AuxGeom/AuxGeomDraw.h>
 #include <AzCore/Component/Component.h>
 #include <AzCore/Component/TickBus.h>
 
-namespace ROS2
+namespace JHO3DETestProject
 {
     class TestComponent
         : public AZ::Component
@@ -38,4 +37,4 @@ namespace ROS2
 
         AZStd::string m_name{ "Test component" };
     };
-} // namespace ROS2
+} // namespace JHO3DETestProject

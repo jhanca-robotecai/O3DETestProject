@@ -11,7 +11,7 @@
 
 #include <AzCore/Serialization/EditContext.h>
 
-namespace ROS2
+namespace JHO3DETestProject
 {
     void TestComponent::Reflect(AZ::ReflectContext* context)
     {
@@ -48,4 +48,4 @@ namespace ROS2
     {
         // code goes here
     }
-} // namespace ROS2
+} // namespace JHO3DETestProject

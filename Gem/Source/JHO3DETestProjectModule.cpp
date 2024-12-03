@@ -3,13 +3,13 @@
 #include <AzCore/Module/Module.h>
 
 #include "JHO3DETestProjectSystemComponent.h"
+#include "Test/TestComponent.h"
 
 #include <JHO3DETestProject/JHO3DETestProjectTypeIds.h>
 
 namespace JHO3DETestProject
 {
-    class JHO3DETestProjectModule
-        : public AZ::Module
+    class JHO3DETestProjectModule : public AZ::Module
     {
     public:
         AZ_RTTI(JHO3DETestProjectModule, JHO3DETestProjectModuleTypeId, AZ::Module);
@@ -18,10 +18,10 @@ namespace JHO3DETestProject
         JHO3DETestProjectModule()
             : AZ::Module()
         {
-            // Push results of [MyComponent]::CreateDescriptor() into m_descriptors here.
-            m_descriptors.insert(m_descriptors.end(), {
-                JHO3DETestProjectSystemComponent::CreateDescriptor(),
-            });
+            // Push results of [MyComponent]::CreateDescriptor() into m_descriptors
+            // here.
+            m_descriptors.insert(
+                m_descriptors.end(), { JHO3DETestProjectSystemComponent::CreateDescriptor(), TestComponent::CreateDescriptor() });
         }
 
         /**
@@ -34,7 +34,7 @@ namespace JHO3DETestProject
             };
         }
     };
-}// namespace JHO3DETestProject
+} // namespace JHO3DETestProject
 
 #if defined(O3DE_GEM_NAME)
 AZ_DECLARE_MODULE_CLASS(AZ_JOIN(Gem_, O3DE_GEM_NAME), JHO3DETestProject::JHO3DETestProjectModule)

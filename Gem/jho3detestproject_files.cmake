@@ -4,4 +4,6 @@ set(FILES
     Include/JHO3DETestProject/JHO3DETestProjectTypeIds.h
     Source/JHO3DETestProjectSystemComponent.cpp
     Source/JHO3DETestProjectSystemComponent.h
+    Source/Test/TestComponent.cpp
+    Source/Test/TestComponent.h
 )
