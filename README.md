@@ -43,3 +43,11 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ninja: build stopped: subcommand failed.
 
 ```
+
+## AZStd::string serialization within prefab issue
+
+Commit `6d78645` adds an empty level `asdf` with a prefab `TestPrefab` using a `TestComponent`. The component uses `AZStd::string` field. When modifying with an override in the O3DE Editor, the Editor crashes each time the modification is followed by `Enter` key. It works correctly when the modification is completed by changing the focus using the mouse (clicking somewhere in the editor).
+
+Backtrace for two debuggers are available:
+- [GDB](./docs/Backtrace_gdb.log)
+- [LLDB](./docs/Backtrace_lldb.log)
